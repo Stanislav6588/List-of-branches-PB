@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+<div class="container">
+	<div class="nameRegion">
+		<h1>Назва області</h1>
+		<select class="name" >
+			<option value=""></option>
+			<option value="Запорожская">Запорожская</option>
+			<option value="Львовская">Львовская</option>
+			<option value="Днепропетровская">Днепропетровская</option>
+			<option value="Одесская">Одесская</option>
+			<option value="Киевская">Киевская</option>
+			<option value="Житомирская">Житомирская</option>
+			<option value="Херсонская">Херсонская</option>
+			<option value="Харьковская">Харьковская</option>
+		</select>
+	</div>
+	<div class="list">
+		<h1>Список відділень</h1>
+		<div class="header">
+			<div class="counter">№</div>
+			<div class="locations">Адреса</div>
+			<div class="phones">Телефон</div>
+		</div>
+		<ul class="listBranches">
+		</ul>
+	</div>
+</div>
+   <script src="main.js"></script>
+	<script>
+		let obj = {
+			name: '.name',
+			listBranches: '.listBranches'
+		}
+		let listPB = new Branches(obj);
+		listPB.init();
+	</script>
+</body>
+
+</html>
